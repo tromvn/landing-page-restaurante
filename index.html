@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand me-auto" href="#">
+          <img
+            src="images/restaurant-sharp-svgrepo-com.svg"
+            alt="restaurant logo"
+            width="30"
+            height="24"
+            class="d-inline-block align-text-top"
+          />
+          Restaurant
+        </a>
+        <button
+          class="navbar-toggler pe-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              <img
+                src="images/restaurant-sharp-svgrepo-com.svg"
+                alt="restaurant logo"
+                width="30"
+                height="24"
+                class="d-inline-block align-text-top"
+              />
+              Restaurant
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#">Menú</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#">Acerca de</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#"
+                  ><img
+                    src="images/shopping-cart-svgrepo-com.svg"
+                    alt="restaurant logo"
+                    width="30"
+                    height="24"
+                    class="d-inline-block align-text-top"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Start Hero -->
+    <section class="hero-section">
+      <div
+        class="container d-flex align-items-left justify-content-center fs-1 text-white flex-column"
+      >
+        <h1>Reservas para Primavera</h1>
+        <h2>eventos disponibles</h2>
+        <a href="#reserva" class="btn btn-primary bike">Agenda aquí</a>
+      </div>
+    </section>
+    <!-- End Hero -->
+
+    <!-- Menú -->
+    <div
+      class="menu container text-center justify-content-center align-items-center"
+    >
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card" style="width: 18rem">
+            <img src="/images/chilena.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Comida chilena</h5>
+              <p class="card-text">
+                Alguno de los platos más insignes de chile
+              </p>
+              <a href="#reserva" class="btn btn-primary">Reserva</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card" style="width: 18rem">
+            <img src="images/francesa.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Comida francesa</h5>
+              <p class="card-text">Fina selección de la gastronomía gala</p>
+              <a href="#reserva" class="btn btn-primary">Reserva</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card" style="width: 18rem">
+            <img src="/images/vegetal.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Comida rápida</h5>
+              <p class="card-text">Sus hijos e hijas no se quedarán fuera</p>
+              <a href="#reserva" class="btn btn-primary">Reserva</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Menú -->
+
+    <!-- Form -->
+    <div class="d-flex align-items-center justify-content-center formulario" id="reserva">
+      <form class="row g-3 needs-validation" novalidate>
+        <div class="col-md-4">
+          <label for="validationCustom01" class="form-label">Nombre</label>
+          <input
+            type="text"
+            class="form-control"
+            id="validationCustom01"
+            value="Mark"
+            required
+          />
+          <div class="valid-feedback">Correcto</div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom02" class="form-label">Apellido</label>
+          <input
+            type="text"
+            class="form-control"
+            id="validationCustom02"
+            value="Otto"
+            required
+          />
+          <div class="valid-feedback">Correcto</div>
+        </div>
+
+        <div class="col-md-4">
+          <label for="exampleFormControlInput1" class="form-label"
+            >Email address</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="nombre@ejemplo.com"
+          />
+        </div>
+
+        <div class="col-md-6">
+          <label for="validationCustom04" class="form-label">Local</label>
+          <select class="form-select" id="validationCustom04" required>
+            <option selected disabled value="">Escoge</option>
+            <option>Santiago</option>
+            <option>Valparaíso</option>
+            <option>Rancagua</option>
+          </select>
+          <div class="invalid-feedback">Please select a valid state.</div>
+        </div>
+        <div class="col-md-6">
+          <label for="validationCustom04" class="form-label"
+            >Cuántas personas</label
+          >
+          <select class="form-select" id="validationCustom04" required>
+            <option selected disabled value="">Escoge</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+          </select>
+          <div class="invalid-feedback">Please select a valid state.</div>
+        </div>
+        <div class="invalid-feedback">You must agree before submitting.</div>
+
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Reservar</button>
+        </div>
+      </form>
+    </div>
+    <!-- Form -->
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <a class="navbar-brand me-auto" href="#">
+              <i class="bi bi-fork-knife"></i>
+              Restaurant®
+            </a>
+            <a href="#" class="text-decoration-none text-light">
+                <h5>restaurant@restaurant.com</h5>
+            </a>
+            <div>
+                <a href="#" class="text-decoration-none text-light"><i class="bi bi-instagram fs-2 me-3"></i></a>
+                <a href="#" class="text-decoration-none text-light"><i class="bi bi-facebook fs-2 me-3"></i></a>
+                <a href="#" class="text-decoration-none text-light"><i class="bi bi-tiktok fs-2 me-3"></i></a>
+                <a href="#" class="text-decoration-none text-light"><i class="bi bi-twitter fs-2"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer -->
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
